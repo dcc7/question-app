@@ -1,0 +1,6 @@
+<div class="card m-5" style="width: 32rem;" *ngFor="let topic of topics; let i = index">
+    <div class="card-body">
+        <h5 class="card-title">Section {{ i + 1}}: {{ topic }}</h5>
+        <a routerLink="{{topic}}" class="card-link">Go to Questions</a>
+    </div>
+</div>

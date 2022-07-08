@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="row mt-5">
+        <h3 class="text-center">Select a Category</h3>
+        <div class="col-3 mt-5 text-center" *ngFor="let category of categories; let i = index">
+            <app-category [subject]="category" [route]="category"></app-category>
+        </div>
+    </div>
+</div>
